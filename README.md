@@ -1,14 +1,11 @@
 ## Identicons
 
-
-
-<p align="center">
-  <img src="https://github.com/LVivona/identicons/blob/d42e48e0adf9c343cab792a42c6d5b51226dabfb/assets/output.png" alt="centered image" />
-</p>
-
-`identicon` is a Python package that generates unique 5x5 identicons based on MD5 hashes of input strings. These identicons are symmetrical images commonly used for representing user avatars in applications.
+`identicons` is a Python package that generates unique 5x5 identicons based on MD5 hashes of input strings. These identicons are symmetrical images commonly used for representing user avatars in applications.
 
 ## Installation
+```bash
+pip install identicons
+```
 
 If you're downloading from a source, navigate to the root directory where `setup.py` is located and run:
 
@@ -19,35 +16,35 @@ python setup.py install
 
 ## Usage
 
-To generate an identicon, you can use the `generate` function:
+To generate an identicons, you can use the `generate` function:
 
 ```python
-from identicon import generate
+from identicons import generate
 
-# Generate an identicon with default colors
+# Generate an identicons with default colors
 icon = generate('hello world')
 
-# Generate an identicon with custom primary and secondary colors
+# Generate an identicons with custom primary and secondary colors
 icon_custom = generate('hello world', primary=0xFFD700, secondary=0x8B0000)
 ```
 
 ```bash
-identicon --text "hello world" --file "output.png" -s 0xa0e7e5 -p 0xffffff
+identicons --text "hello world" --file "output.png" -s 0xa0e7e5 -p 0xffffff
 ```
 
-The `generate` function returns a NumPy array representing the identicon image. You can save this image using the `save` function:
+The `generate` function returns a NumPy array representing the identicons image. You can save this image using the `save` function:
 
 ```python
-from identicon import save
+from identicons import save
 
-# Save the generated identicon
-save(icon, 'identicon.png', '/path/to/save/directory', 500, 500)
+# Save the generated identicons that is 500x500
+save(icon, 'identicons.png', '/path/to/save/directory', 500, 500)
 ```
 
 ## Features
 
 - Generate unique and symmetrical 5x5 identicons.
-- Customize identicon colors.
+- Customize identicons colors.
 - Save identicons in different sizes.
 
 ## Contributing
@@ -76,4 +73,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Your Name - [your_email@example.com](mailto:lucavivona01@gmail.com)
 
 
-Project Link: [https://github.com/LVivona/identicon](https://github.com/LVivona/identicons)
+Project Link: [https://github.com/LVivona/identicons](https://github.com/LVivona/identicons)
