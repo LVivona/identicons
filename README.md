@@ -1,4 +1,9 @@
-Certainly! Below is a template for a README file for your identicon generator project. This template assumes that your package is named `identicon` and includes instructions for installation, usage, and contribution guidelines.
+## Identicons
+
+
+<p align="center">
+  <img src="assets/output.png" alt="centered image" />
+</p>
 
 ```markdown
 # Identicon Generator
