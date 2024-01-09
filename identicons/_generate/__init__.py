@@ -75,12 +75,12 @@ def generate(txt: str, primary: int = 0XB4F8C8, secondary: int = 0xFFFFFF) -> np
 
 
 
-def save(icon: np.ndarray, file: str, dir: str, height: int, width: int):
+def save(icon: np.ndarray, filepath: str, height: int, width: int):
     try:
-        assert os.path.isdir(dir)
-        assert file.lower().endswith(('.png', '.jpg', '.jpeg'))
+        assert 100 <= height, f"{height} is far two small, the minimum height is 100 pixels"
+        assert 100 <= width, f"{width} is far two small, the minimum width is 100 pixels"
+        assert filepath.lower().endswith(('.png', '.jpg', '.jpeg'))
 
-        filepath = os.path.join(dir, file)
         i, j = icon.shape[:2]
         h, w = height // i, width // j
         large_identicon = np.repeat(icon, h, axis=0)
@@ -91,8 +91,9 @@ def save(icon: np.ndarray, file: str, dir: str, height: int, width: int):
         return temp
     except AssertionError as e:
         console.print("[bold red]Assertion Error:[/bold red]", e)
+        raise e
     except Exception as e:
         console.print("[bold red]Error:[/bold red]", e)
+        raise e
 
-# Rest of your functions...
 
