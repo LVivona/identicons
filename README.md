@@ -1,6 +1,7 @@
 ## Identicons
 
 
+
 <p align="center">
   <img src="assets/output.png" alt="centered image" />
 </p>
@@ -63,6 +64,9 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+### Why build this?
+I was curious on how github generates there icons, and thought I should build a simple cli/package to do it for me lol. :)
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
@@ -73,6 +77,3 @@ Your Name - [your_email@example.com](mailto:lucavivona01@gmail.com)
 
 
 Project Link: [https://github.com/LVivona/identicon](https://github.com/LVivona/identicons)
-
-
-Remember to replace placeholders (like `your_username_or_email`, `/path/to/save/directory`, `your_name`, `your_email@example.com`, and GitHub links) with your actual data. The README is designed to be clear and welcoming to potential users and contributors, following standard open-source community guidelines.
