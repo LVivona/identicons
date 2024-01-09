@@ -4,7 +4,7 @@ from identicons._generate import generate, save
 
 def main():
 
-    parser = argparse.ArgumentParser(description=f'CLI tool.')
+    parser = argparse.ArgumentParser(description=f'identicons CLI tool that allow you to interface with the package and generate your identicons via command line.')
     parser.add_argument(
         '-t', '--text',
         required=True,

@@ -1,6 +1,5 @@
 from rich.console import Console
 from rich.traceback import install
-import os
 import numpy as np
 from PIL import Image
 import hashlib
@@ -80,7 +79,7 @@ def save(icon: np.ndarray, filepath: str, height: int, width: int):
         assert 100 <= height, f"{height} is far two small, the minimum height is 100 pixels"
         assert 100 <= width, f"{width} is far two small, the minimum width is 100 pixels"
         assert filepath.lower().endswith(('.png', '.jpg', '.jpeg'))
-
+        
         i, j = icon.shape[:2]
         h, w = height // i, width // j
         large_identicon = np.repeat(icon, h, axis=0)
