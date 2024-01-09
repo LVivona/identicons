@@ -38,7 +38,7 @@ The `generate` function returns a NumPy array representing the identicons image.
 from identicons import save
 
 # Save the generated identicons that is 500x500
-save(icon, 'identicons.png', '/path/to/save/directory', 500, 500)
+save(icon, 'identicons.png', 500, 500)
 ```
 
 ## Features
