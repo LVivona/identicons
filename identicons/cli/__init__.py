@@ -13,7 +13,7 @@ def main():
     parser.add_argument('-w', '--width', default=500, type=int, required=False, help="Specify the width of the output image.")
     parser.add_argument('-hi', '--height', default=500, type=int, required=False, help="Specify the height of the output image.")
 
-    parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.1.0', help='byteTensor version ')
+    parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.1.3', help='byteTensor version ')
 
     try:
 

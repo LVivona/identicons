@@ -1,7 +1,6 @@
-__all__ = []
-
 import argparse
-from identicon._generate import generate, save
+
+from identicons._generate import generate, save
 
 def main():
 
@@ -15,14 +14,12 @@ def main():
 
     parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.1.0', help='byteTensor version ')
 
-    try:
 
-        args = parser.parse_args()
-        primary, secondary = int(args.primary, 16), int(args.secondary, 16)
-        icon = generate(args.text, primary, secondary)
-        save(icon, args.file, "./", args.height, args.width)
-    except Exception as e:
-        raise e
+    args = parser.parse_args()
+    primary, secondary = int(args.primary, 16), int(args.secondary, 16)
+    print(primary, secondary)
+    icon = generate(args.text, primary, secondary)
+    save(icon, args.file, "./", args.height, args.width)
     
 
 if __name__ == "__name__":
