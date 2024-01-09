@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <img src="assets/output.png" alt="centered image" />
+  <img src="https://github.com/LVivona/identicons/blob/d42e48e0adf9c343cab792a42c6d5b51226dabfb/assets/output.png" alt="centered image" />
 </p>
 
 `identicon` is a Python package that generates unique 5x5 identicons based on MD5 hashes of input strings. These identicons are symmetrical images commonly used for representing user avatars in applications.
