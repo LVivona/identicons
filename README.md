@@ -70,7 +70,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [your_email@example.com](mailto:lucavivona01@gmail.com)
+Your Name - [lucavivona01@gmail.com](mailto:lucavivona01@gmail.com)
 
 
 Project Link: [https://github.com/LVivona/identicons](https://github.com/LVivona/identicons)
