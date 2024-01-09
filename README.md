@@ -69,8 +69,5 @@ I was curious on how github generates there icons, and thought I should build a 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
-
-Your Name - [lucavivona01@gmail.com](mailto:lucavivona01@gmail.com)
-
-
-Project Link: [https://github.com/LVivona/identicons](https://github.com/LVivona/identicons)
+-  [lucavivona01@gmail.com](mailto:lucavivona01@gmail.com)
+-  [https://github.com/LVivona/identicons](https://github.com/LVivona/identicons)
