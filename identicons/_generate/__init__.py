@@ -1,8 +1,12 @@
+__all__ = ["generate", "save"]
+from __future__ import annotations
 from rich.console import Console
 from rich.traceback import install
 import numpy as np
 from PIL import Image
 import hashlib
+
+
 
 # Install rich's global traceback handler
 install()
