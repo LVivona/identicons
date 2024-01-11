@@ -75,10 +75,32 @@ def generate(txt: str, primary: int = 0XB4F8C8, secondary: int = 0xFFFFFF) -> np
 
 
 def save(icon: np.ndarray, filepath: str, height: int, width: int):
+    """
+        Resizes and saves a 5x5 identicon image to a larger image file.
+
+        This function takes a small identicon represented as a 3D NumPy ndarray and scales
+        it to a specified height and width, then saves it in a common image format such as
+        PNG, JPG, or JPEG.
+
+        Args:
+            icon (ndarray): A 3D array NumPy ndarray object representing a 5x5 identicon image.
+                            This image will be scaled to the specified dimensions.
+            filepath (str): A string specifying the file path where the resized image will be saved.
+                            The file format should be PNG, JPG, or JPEG.
+            height (int):   The height to which the identicon should be scaled. The minimum height
+                            allowed is 100 pixels.
+            width (int):    The width to which the identicon should be scaled. The minimum width
+                            allowed is 100 pixels.
+
+        Raises:
+            AssertionError: If the specified height or width is less than 100 pixels, or if the
+                            file format is not PNG, JPG, or JPEG. Appropriate error messages are
+                            provided in these cases.
+    """
     try:
         assert 100 <= height, f"{height} is far two small, the minimum height is 100 pixels"
         assert 100 <= width, f"{width} is far two small, the minimum width is 100 pixels"
-        assert filepath.lower().endswith(('.png', '.jpg', '.jpeg'))
+        assert filepath.lower().endswith(('.png', '.jpg', '.jpeg')), f"{filepath} is not png, jpg, or jpeg please enter formate file of one of those  "
         
         i, j = icon.shape[:2]
         h, w = height // i, width // j
@@ -89,10 +111,8 @@ def save(icon: np.ndarray, filepath: str, height: int, width: int):
         temp.save(filepath)
         return temp
     except AssertionError as e:
-        console.print("[bold red]Assertion Error:[/bold red]", e)
         raise e
     except Exception as e:
-        console.print("[bold red]Error:[/bold red]", e)
         raise e
 
 
